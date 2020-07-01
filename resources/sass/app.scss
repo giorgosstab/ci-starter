@@ -1,0 +1,18 @@
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+@import '~sweetalert2/dist/sweetalert2.css';
+
+// select2 dropdown
+@import '~select2/dist/css/select2.css';
+@import '~@ttskch/select2-bootstrap4-theme/dist/select2-bootstrap4.css';
+
+// dataTables
+@import '~datatables.net-bs4/css/dataTables.bootstrap4.css';
+@import '~datatables.net-fixedHeader-bs4/css/fixedHeader.bootstrap4.min.css';
+@import '~datatables.net-responsive-bs4/css/responsive.bootstrap4.css';
+
+.select2-container--bootstrap4 .select2-selection {
+    border-radius: 2px !important;
+}
