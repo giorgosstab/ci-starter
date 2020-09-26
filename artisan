@@ -1,0 +1,10 @@
+#!/usr/bin/php -q
+<?php
+
+require_once 'vendor/autoload.php';
+
+if (file_exists('index.php')) {
+    require_once 'index.php';
+} else {
+    echo 'Missing index file!';
+}
