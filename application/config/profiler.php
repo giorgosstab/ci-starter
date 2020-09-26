@@ -90,7 +90,7 @@ $config['open_handler_url']             = NULL; // Example : get_instance()->con
 | application/cache/debugbar/ directory. Use a full server path with trailing slash.
 |
 */
-$config['cache_path']                   = '';
+$config['cache_path']                   = FCPATH.'storage/debugbar/';
 
 /*
 |--------------------------------------------------------------------------

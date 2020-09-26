@@ -12,6 +12,7 @@
 	},
 	"require": {
 		"php": ">=5.3.7",
+	  	"tan5en5/codeigniter-debugbar": "dev-master",
 	  	"xiaoler/blade": "^5.4",
 	  	"luthier/luthier": "^1.0",
 	  	"vlucas/phpdotenv": "^4.1",
