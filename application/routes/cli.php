@@ -12,11 +12,14 @@
 Luthier\Cli::maker();
 Luthier\Cli::migrations();
 
-Route::group('luthier', function(){
-    Route::group('database', function(){
-        Route::cli('seed', function(){
-            ci()->seeder->call('DatabaseSeeder');
-            echo 'DatabaseSeeder seeding successfully!';
-        });
-    });
-});
+Route::cli('make:controller/{(.+):name}', 'Luthier/CliController@makeContoller');
+Route::cli('make:model/{(.+):name}', 'Luthier/CliController@makeModel');
+Route::cli('make:helper/{(.+):name}', 'Luthier/CliController@makeHelper');
+Route::cli('make:library/{(.+):name}', 'Luthier/CliController@makeLibrary');
+Route::cli('make:middleware/{(.+):name}', 'Luthier/CliController@makeMiddleware');
+Route::cli('make:migration/{name}/{((sequential|timestamp)):type?}', 'Luthier/CliController@makeMigration');
+Route::cli('make:seeder/{(.+):name}', 'Luthier/CliController@makeSeeder');
+
+Route::cli('migrate/{version?}/{seed?}', 'Luthier/CliController@migrations');
+Route::cli('db:seed', 'Luthier/CliController@seeds');
+
