@@ -18,7 +18,7 @@
  *      -> $route['blog/(:any)'] = 'blog/post/$1'
  */
 
-Route::get('/','WelcomeController@index')->name('public.home.index');
+Route::get('/','WelcomeController@index')->name('public.welcome');
 
 Route::set('404_override', function(){
 //	show_404();
