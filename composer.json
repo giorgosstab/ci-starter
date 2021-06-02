@@ -11,7 +11,7 @@
 		"source": "https://github.com/bcit-ci/CodeIgniter"
 	},
 	"require": {
-		"php": ">=5.3.7",
+		"php": "^7.3|^8.0",
 	  	"tan5en5/codeigniter-debugbar": "dev-master",
 	  	"xiaoler/blade": "^5.4",
 	  	"luthier/luthier": "^1.0",
@@ -28,5 +28,12 @@
 	"require-dev": {
 		"mikey179/vfsstream": "1.1.*",
 		"phpunit/phpunit": "4.* || 5.*"
-	}
+	},
+	"config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
