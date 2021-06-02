@@ -29,6 +29,11 @@
 		"mikey179/vfsstream": "1.1.*",
 		"phpunit/phpunit": "4.* || 5.*"
 	},
+	"scripts": {
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ]
+    },
 	"config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
